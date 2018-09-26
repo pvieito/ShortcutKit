@@ -9,9 +9,9 @@ let package = Package(
         .library(name: "ShortcutKit", targets: ["ShortcutKit"]),
     ],
     dependencies: [
-        .package(path: "../LoggerKit"),
-        .package(path: "../CommandLineKit"),
-        .package(path: "../FoundationKit"),
+        .package(url: "https://github.com/pvieito/CommandLineKit.git", .branch("master")),
+        .package(url: "https://github.com/pvieito/LoggerKit.git", .branch("master")),
+        .package(url: "https://github.com/pvieito/FoundationKit.git", .branch("master")),
     ],
     targets: [
         .target(name: "ShortcutTool", dependencies: ["LoggerKit", "CommandLineKit", "FoundationKit", "ShortcutKit"], path: "ShortcutTool"),

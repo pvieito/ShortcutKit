@@ -107,6 +107,7 @@
 		AA23012A215C1B5400C530F9 /* FoundationKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = FoundationKit.xcodeproj; path = ../FoundationKit/FoundationKit.xcodeproj; sourceTree = "<group>"; };
 		AA349B99215C2BB0006E2E58 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		AA349B9D215C2E75006E2E58 /* PropertyListCoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyListCoder.swift; sourceTree = "<group>"; };
+		AA349B9F215C31E8006E2E58 /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 		AA659B3D1F4E496500230418 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AACFD8741F06823A006AB0EE /* ShortcutTool */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ShortcutTool; sourceTree = BUILT_PRODUCTS_DIR; };
 		AACFD87E1F06824C006AB0EE /* CommandLineKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CommandLineKit.xcodeproj; path = ../CommandLineKit/CommandLineKit.xcodeproj; sourceTree = "<group>"; };
@@ -154,6 +155,7 @@
 				AACFD8841F068252006AB0EE /* LoggerKit.xcodeproj */,
 				AACFD87E1F06824C006AB0EE /* CommandLineKit.xcodeproj */,
 				AA349B99215C2BB0006E2E58 /* README.md */,
+				AA349B9F215C31E8006E2E58 /* Package.swift */,
 				AAE30A6120AB799F00090857 /* ShortcutKit */,
 				AACFD8761F06823A006AB0EE /* ShortcutTool */,
 				AACFD8751F06823A006AB0EE /* Products */,
