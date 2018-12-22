@@ -10,7 +10,7 @@
 		AA230125215C196D00C530F9 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA230124215C196D00C530F9 /* main.swift */; };
 		AA230129215C19B500C530F9 /* Shortcut.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA230127215C19B500C530F9 /* Shortcut.swift */; };
 		AA230136215C1B5C00C530F9 /* FoundationKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA230131215C1B5400C530F9 /* FoundationKit.framework */; };
-		AA349B9E215C2E75006E2E58 /* PropertyListCoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA349B9D215C2E75006E2E58 /* PropertyListCoder.swift */; };
+		AA912D6921CECC2B00ABFCC7 /* FoundationKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA230131215C1B5400C530F9 /* FoundationKit.framework */; };
 		AACFD8A71F0682F6006AB0EE /* CommandLineKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AACFD8831F06824C006AB0EE /* CommandLineKit.framework */; };
 		AACFD8A91F0682F6006AB0EE /* LoggerKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AACFD88A1F068252006AB0EE /* LoggerKit.framework */; };
 		AAE30A8520AB8B6600090857 /* ShortcutKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AAE30A6020AB799F00090857 /* ShortcutKit.framework */; };
@@ -106,7 +106,6 @@
 		AA230127215C19B500C530F9 /* Shortcut.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Shortcut.swift; sourceTree = "<group>"; };
 		AA23012A215C1B5400C530F9 /* FoundationKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = FoundationKit.xcodeproj; path = ../FoundationKit/FoundationKit.xcodeproj; sourceTree = "<group>"; };
 		AA349B99215C2BB0006E2E58 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		AA349B9D215C2E75006E2E58 /* PropertyListCoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyListCoder.swift; sourceTree = "<group>"; };
 		AA349B9F215C31E8006E2E58 /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 		AA659B3D1F4E496500230418 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AACFD8741F06823A006AB0EE /* ShortcutTool */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ShortcutTool; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -132,6 +131,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA912D6921CECC2B00ABFCC7 /* FoundationKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -201,7 +201,6 @@
 			isa = PBXGroup;
 			children = (
 				AA230127215C19B500C530F9 /* Shortcut.swift */,
-				AA349B9D215C2E75006E2E58 /* PropertyListCoder.swift */,
 				AAE30A6320AB799F00090857 /* Info.plist */,
 			);
 			path = ShortcutKit;
@@ -380,7 +379,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AA349B9E215C2E75006E2E58 /* PropertyListCoder.swift in Sources */,
 				AA230129215C19B500C530F9 /* Shortcut.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
