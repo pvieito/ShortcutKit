@@ -21,8 +21,8 @@ let package = Package(
         ),
         .target(
             name: "ShortcutKit",
-            path: "ShortcutKit",
-            dependencies: ["FoundationKit"]
+            dependencies: ["FoundationKit"],
+            path: "ShortcutKit"
         ),
     ]
 )
