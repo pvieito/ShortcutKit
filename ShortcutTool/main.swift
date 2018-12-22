@@ -41,9 +41,7 @@ guard let inputItems = inputOption.value?.pathURLs, !inputItems.isEmpty else {
 }
 
 for inputItem in inputItems {
-    
     do {
-        
         let shortcut = try Shortcut(contentsOf: inputItem)
         
         Logger.log(important: inputItem.lastPathComponent)
