@@ -37,7 +37,7 @@ print(shortcut.inputContentItemClasses)
 // ["WFRichTextContentItem", "WFLocationContentItem", "WFURLContentItem"]
 
 for action in shortcut.actions {
-    print(shortcut.inputContentItemClasses)
+    print(action)
 }
 // is.workflow.actions.properties.appstore
 // is.workflow.actions.sirikit.donation.handle
