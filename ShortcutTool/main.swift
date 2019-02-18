@@ -36,8 +36,7 @@ Logger.logMode = .commandLine
 Logger.logLevel = verboseOption.value ? .debug : .info
 
 guard let inputItems = inputOption.value?.pathURLs, !inputItems.isEmpty else {
-    Logger.log(error: "No input specified.")
-    exit(EX_USAGE)
+    Logger.log(fatalError: "No input specified.")
 }
 
 for inputItem in inputItems {
