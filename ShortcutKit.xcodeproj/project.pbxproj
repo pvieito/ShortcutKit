@@ -66,6 +66,13 @@
 			remoteGlobalIDString = 5D06884219674D7D00BBFAAC;
 			remoteInfo = CommandLineKit;
 		};
+		AA9F0862222F285900245ED0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AACFD87E1F06824C006AB0EE /* CommandLineKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = AABB3B53220FB42A00DEE6F4;
+			remoteInfo = CommandLineKitTests;
+		};
 		AACFD8821F06824C006AB0EE /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = AACFD87E1F06824C006AB0EE /* CommandLineKit.xcodeproj */;
@@ -184,6 +191,7 @@
 			isa = PBXGroup;
 			children = (
 				AACFD8831F06824C006AB0EE /* CommandLineKit.framework */,
+				AA9F0863222F285900245ED0 /* CommandLineKitTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -270,11 +278,11 @@
 				TargetAttributes = {
 					AACFD8731F06823A006AB0EE = {
 						CreatedOnToolsVersion = 9.0;
-						LastSwiftMigration = 0900;
+						LastSwiftMigration = 1020;
 					};
 					AAE30A5F20AB799F00090857 = {
 						CreatedOnToolsVersion = 9.3.1;
-						LastSwiftMigration = 1000;
+						LastSwiftMigration = 1020;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -285,6 +293,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = AACFD86B1F06823A006AB0EE;
 			productRefGroup = AACFD8751F06823A006AB0EE /* Products */;
@@ -331,6 +340,13 @@
 			fileType = wrapper.cfbundle;
 			path = FoundationKitTests.xctest;
 			remoteRef = AA230134215C1B5400C530F9 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		AA9F0863222F285900245ED0 /* CommandLineKitTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = CommandLineKitTests.xctest;
+			remoteRef = AA9F0862222F285900245ED0 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 		AACFD8831F06824C006AB0EE /* CommandLineKit.framework */ = {
@@ -535,7 +551,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.pvieito.ShortcutTool;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -550,7 +566,7 @@
 				LIBRARY_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
 				PRODUCT_BUNDLE_IDENTIFIER = com.pvieito.ShortcutTool;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
@@ -576,7 +592,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
@@ -602,7 +618,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.pvieito.ShortcutKit;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;

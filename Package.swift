@@ -1,4 +1,4 @@
-// swift-tools-version:4.2
+// swift-tools-version:5.0
 
 import PackageDescription
 
@@ -11,7 +11,6 @@ let package = Package(
     dependencies: [
         .package(url: "https://github.com/pvieito/CommandLineKit.git", .branch("master")),
         .package(url: "https://github.com/pvieito/LoggerKit.git", .branch("master")),
-        .package(url: "https://github.com/pvieito/FoundationKit.git", .branch("master")),
     ],
     targets: [
         .target(

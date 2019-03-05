@@ -7,7 +7,6 @@
 //
 
 import Foundation
-import FoundationKit
 
 public struct Shortcut: Codable {
     public struct ShortcutAction: Codable {
