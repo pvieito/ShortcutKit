@@ -5,13 +5,19 @@ import PackageDescription
 let package = Package(
     name: "ShortcutKit",
     products: [
-        .executable(name: "ShortcutTool", targets: ["ShortcutTool"]),
-        .library(name: "ShortcutKit", targets: ["ShortcutKit"]),
+        .executable(
+            name: "ShortcutTool",
+            targets: ["ShortcutTool"]
+        ),
+        .library(
+            name: "ShortcutKit",
+            targets: ["ShortcutKit"]
+        )
     ],
     dependencies: [
         .package(url: "https://github.com/pvieito/CommandLineKit.git", .branch("master")),
         .package(url: "https://github.com/pvieito/LoggerKit.git", .branch("master")),
-        .package(url: "https://github.com/pvieito/FoundationKit.git", .branch("master")),
+        .package(url: "https://github.com/pvieito/FoundationKit.git", .branch("master"))
     ],
     targets: [
         .target(
