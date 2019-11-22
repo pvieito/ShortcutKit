@@ -30,5 +30,9 @@ let package = Package(
             dependencies: ["FoundationKit"],
             path: "ShortcutKit"
         ),
+        .testTarget(
+            name: "ShortcutKitTest",
+            dependencies: ["ShortcutKit", "FoundationKit"]
+        )
     ]
 )

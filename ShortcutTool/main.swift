@@ -12,7 +12,7 @@ import LoggerKit
 import CommandLineKit
 import ShortcutKit
 
-let inputOption = MultiStringOption(shortFlag: "i", longFlag: "input", helpMessage: "Input shortcuts.")
+let inputOption = StringOption(shortFlag: "i", longFlag: "input", required: true, helpMessage: "Input shortcut.")
 let verboseOption = BoolOption(shortFlag: "v", longFlag: "verbose", helpMessage: "Verbose mode.")
 let helpOption = BoolOption(shortFlag: "h", longFlag: "help", helpMessage: "Prints a help message.")
 
@@ -35,33 +35,31 @@ if helpOption.value {
 Logger.logMode = .commandLine
 Logger.logLevel = verboseOption.value ? .debug : .info
 
-guard let inputItems = inputOption.value?.pathURLs, !inputItems.isEmpty else {
+guard let inputItem = inputOption.value?.pathURL else {
     Logger.log(fatalError: "No input specified.")
 }
 
-for inputItem in inputItems {
-    do {
-        let shortcut = try Shortcut(contentsOf: inputItem)
-        
-        Logger.log(important: inputItem.lastPathComponent)
-        Logger.log(info: "Client Release: \(shortcut.clientRelease)")
-        Logger.log(info: "Client Version: \(shortcut.clientVersion)")
-        
-        if let types = shortcut.types, !types.isEmpty {
-            Logger.log(info: "Types: \(types.joined(separator: ", "))")
-        }
-        
-        if let inputContentItemClasses = shortcut.inputContentItemClasses, !inputContentItemClasses.isEmpty {
-            Logger.log(verbose: "Input Content Classes: \(inputContentItemClasses.joined(separator: ", "))")
-        }
-        
-        Logger.log(success: "Actions (\(shortcut.actions.count))")
-        
-        for action in shortcut.actions {
-            Logger.log(info: "\(action.identifier)")
-        }
+do {
+    let shortcut = try Shortcut(contentsOf: inputItem)
+    
+    Logger.log(important: inputItem.lastPathComponent)
+    Logger.log(info: "Client Release: \(shortcut.clientRelease)")
+    Logger.log(info: "Client Version: \(shortcut.clientVersion)")
+    
+    if let types = shortcut.types, !types.isEmpty {
+        Logger.log(info: "Types: \(types.joined(separator: ", "))")
     }
-    catch {
-        Logger.log(warning: error)
+    
+    if let inputContentItemClasses = shortcut.inputContentItemClasses, !inputContentItemClasses.isEmpty {
+        Logger.log(verbose: "Input Content Classes: \(inputContentItemClasses.joined(separator: ", "))")
     }
+    
+    Logger.log(success: "Actions (\(shortcut.actions.count))")
+    
+    for action in shortcut.actions {
+        Logger.log(info: "\(action.identifier)")
+    }
+}
+catch {
+    Logger.log(fatalError: error)
 }
