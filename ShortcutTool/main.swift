@@ -43,8 +43,14 @@ do {
     let shortcut = try Shortcut(contentsOf: inputItem)
     
     Logger.log(important: inputItem.lastPathComponent)
-    Logger.log(info: "Client Release: \(shortcut.clientRelease)")
-    Logger.log(info: "Client Version: \(shortcut.clientVersion)")
+    
+    if let clientRelease = shortcut.clientRelease {
+        Logger.log(info: "Client Release: \(clientRelease)")
+    }
+    
+    if let clientVersion = shortcut.clientVersion {
+        Logger.log(info: "Client Version: \(clientVersion)")
+    }
     
     if let types = shortcut.types, !types.isEmpty {
         Logger.log(info: "Types: \(types.joined(separator: ", "))")

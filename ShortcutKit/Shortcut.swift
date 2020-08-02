@@ -53,10 +53,10 @@ public struct Shortcut: Codable {
         }
     }
     
-    public let clientVersion: String
-    public let clientRelease: String
+    public let clientVersion: String?
+    public let clientRelease: String?
     public let actions: [ShortcutAction]
-    public let icon: ShortcutIcon
+    public let icon: ShortcutIcon?
     public let types: [String]?
     public let inputContentItemClasses: [String]?
     

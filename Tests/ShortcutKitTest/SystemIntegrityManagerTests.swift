@@ -16,7 +16,7 @@ class ShortcutTests: XCTestCase {
         let shortcutURL = Bundle.currentModuleBundle().url(forResource: "TestShortcut", withExtension: "shortcut")!
         let shortcut = try Shortcut(contentsOf: shortcutURL)
         
-        XCTAssertEqual(shortcut.icon.glyphNumber, 59511)
+        XCTAssertEqual(shortcut.icon?.glyphNumber, 59511)
         XCTAssertEqual(shortcut.actions.count, 6)
         XCTAssertEqual(shortcut.actions[0].identifier, "is.workflow.actions.sirikit.donation.handle")
         XCTAssertEqual(shortcut.types?.last, "WatchKit")
